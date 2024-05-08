@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  overflow-y: hidden;
+}
+
+.App {
+  text-align: center;
+  background: linear-gradient(to right, #58dfcd, #0f63b6);
+  min-height: 100vh;
+  flex: 1;
+
+}
+
+.form-wrapper {
+  flex-direction: column;
+  display: flex;
+  background-color: whitesmoke;
+  padding: 16px;
+  border-radius: 16px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.error-message {
+  color: rgb(235, 70, 70);
+  font-size: 0.8rem;
+  margin-top: 0.25rem;
+}
+
+.card {
+  text-align: center;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+.render_result-wrapper {
+  background-color: whitesmoke;
+  min-height: 5rem;
+  border-width: 2px;
+  border-radius: 16px;
+  margin-top: 16px;
+  padding: 16px;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .App {
+    padding: 90px;
+  }
+
+  .card {
+    flex-direction: 'column';
+  }
+
+  body {
+    font-size: 14px;
+  }
+
+
+  .form-group {
+    flex-direction: row;
+  }
+}
+
+@media only screen and (max-width: 599px) {
+  .App {
+    padding: 25px;
+  }
+
+  .card {
+    flex-direction: 'row';
+  }
+
+  body {
+    font-size: 16px;
+  }
+
+  .form-group {
+    flex-direction: column;
+  }
+}
